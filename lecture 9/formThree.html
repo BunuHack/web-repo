@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lec9(Third) </title>
+
+    <style>
+        
+        .form{
+            background-color: rgb(138, 146, 169);
+            border: 4px solid black;
+            margin: 10px;
+            padding: 15px;
+        }
+        #fieldset1{
+            background-color: rgba(130, 180, 103, 0.945);
+            border: 3px solid black;
+            
+        }
+    
+        #fieldset2{
+    
+            background-color:  rgba(130, 180, 103, 0.945);
+            border: 3px solid black;
+        }
+    
+        #fieldset3{
+    
+            background-color: rgba(130, 180, 103, 0.945);
+            border: 3px solid black;
+        }
+    
+    </style>
+</head>
+
+
+<body>
+    
+<form class="form">
+
+    <h2> Complex Form </h2>
+
+    <fieldset id="fieldset1">
+
+        <legend><h3>Personal Informatin</h3> </legend>
+
+        <label for="name ">Name </label> 
+        <input type="text" name="name" id="name" >
+    
+
+        <label for="emailId">Email Id </label>
+        <input type="email" name="emailId" id="emailId">
+    
+        <label for="phoneNumber">Phone No.</label> 
+        <input type="tel" name="phoneNumber" id="phoneNumber"> 
+        <br>
+        <br>
+
+        <label for="dateofbirth">Date of Birth </label>
+        <input type="date" name="dateofbirth" id="dateofbirth">
+
+        <label for="gender">Gender </label>
+
+        <input type="radio" name="radio1" id="radio1">
+        <label for="radio1">Male</label>
+
+        <input type="radio" name="radio1" id="radio2">
+        <label for="radio2">Female</label>
+    
+      
+        <label for="country">Country </label>
+        <select name="country" id="country">
+            <option value=""> ---Select Your Country---</option>
+            <option value="india">India</option>
+            <option value="us">America</option>
+            <option value="uk">England</option>
+
+        </select>
+
+    
+    </fieldset>
+    <br>
+    <br>
+    <fieldset id="fieldset2">
+
+        <legend><h3>Address</h3></legend>
+        <br>
+
+        <label for="street">Street</label>
+        <input type="text" name="street" id="street">
+
+        <label for="city">City</label>
+        <input type="text" name="city" id="city">
+
+        <label for="state">State</label>
+        <input type="text" name="state" id="state">
+
+        <label for="zip">Zip Code</label>
+        <input type="number" name="zip" id="zip">
+
+
+    </fieldset>
+<br>
+<br>
+    <fieldset id="fieldset3">
+
+        <legend><h3>Other Information</h3> </legend>
+
+        <label for="comment">Comments</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter Your Text Here ......"></textarea>
+        
+    </fieldset>
+<br>
+<br>
+
+
+<input type="submit" value="Submit">
+<input type="reset" name="reset" id="reset">
+</form>
+
+</body>
+</html>
